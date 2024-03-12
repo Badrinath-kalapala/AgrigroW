@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Registration</title>
+  
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("ccccc.jpg");
+            background-size: cover;
+            margin:0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            }
+        h2{
+            text-align: center;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+        .regi{
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: #4cae4c;
+
+        }
+    </style>
+   
+</head>
+<body>
+   
+
+
+   
+
+<form action="demo.html" method="post">
+    <h2>Crop  Registration</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone.No:</label>
+    <input type="number" id="phone" name="phone"  pattern="[0-9]{10}" required>
+    <label for="season">Select Season:</label>
+
+    <select id="season" name="season" style="width:300px; font-size: 16px;" >
+        <option value="Kharif season">Kharif season</option>
+        <option value="Rabi season">Rabi season</option>
+        <option value="Zaid season">Zaid season</option>
+        
+    </select> 
+    <br></br>
+        
+    <label for="Crop Name">Cropname:</label>
+    <input type="text" id="cropname" name="Cropname" required>
+
+    <label for="Acres">Acres</label>
+    <input type="number" id="Acres" name="Acres" step="0.01" required>
+    
+
+    
+
+    <button type="submit" class="regi" onclick="alert('successful Register')">Register</button>
+    <div id="successMessage" style="display: none; text-align: center; color: green;">
+        Registration successful! Thank you for registering.
+    </div>
+</form>
+
+</body>
+</html>

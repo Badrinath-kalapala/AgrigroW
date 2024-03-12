@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url("crop.jpg");
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        .login-container {
+            text-align: center;
+            padding: 20px;
+            border: #9db59a;
+            border-radius: 10px;
+
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            
+        }
+
+        label {
+            display: block;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: #4cae4c;
+
+        }
+
+        button:hover {
+            background-color: #45a545;
+        }
+
+        .forgot-password {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #c9baba;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .username{
+            text-align: left;
+        }
+        .password{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="demo.html" method="post">
+            <label for="username" class="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Username">
+        
+            
+            <label for="password" class="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Your Password">
+            <button type="submit">Login</button>
+            
+
+        </form>
+        <p class="forgot-password" onclick="forgotPassword()">Forgot Password?</p>
+      
+        
+    </div>
+
+    <script>
+        function forgotPassword() {
+            // Add logic to handle forgot password functionality
+            alert("Forgot Password? Implement your logic here.");
+        }
+    </script>
+</body>
+</html>
